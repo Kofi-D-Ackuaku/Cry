@@ -1,0 +1,74 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+    background-image: url(olena-bohovyk-p8NSgvjEk-Y-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins/Poppins-Bold.ttf') format('truetype');
+}
+
+.container {
+    text-align: center;
+    padding: 20px; /* Add padding for better spacing */
+}
+
+h1 {
+    font-size: 2rem; /* Adjust font size for mobile */
+    color: #fefefe;
+    margin-bottom: 10px; /* Reduce margin for mobile */
+}
+
+p {
+    font-size: 1.2rem; /* Adjust font size for mobile */
+    color: #fefefe;
+    margin-bottom: 20px; /* Reduce margin for mobile */
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    /* gap: 30px; Space between buttons */
+    margin-left: 50px;
+}
+
+button {
+    background: transparent;
+    border: 2px solid #fefefe;
+    padding: 10px 20px; /* Adjust padding for mobile */
+    cursor: pointer;
+}
+
+button a {
+    color: #fefefe;
+    text-decoration: none;
+    font-size: 1rem; /* Adjust font size for mobile */
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Responsive Styles for iPhone 11 Pro (375px width) */
+@media (max-width: 375px) {
+    h1 {
+        font-size: 1.5rem; /* Smaller font size for smaller screens */
+    }
+
+    p {
+        font-size: 1rem; /* Smaller font size for smaller screens */
+    }
+
+    button {
+        padding: 8px 16px; /* Smaller padding for smaller screens */
+    }
+
+    button a {
+        font-size: 0.9rem; /* Smaller font size for smaller screens */
+    }
+}

@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Typewriter', monospace;
+    background-image: url(two-red-hearts-against-red-background.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    height: 100vh; /* Full viewport height */
+    /* overflow: hidden; Hide overflow to prevent scrolling during animation */
+}
+
+@font-face {
+    font-family: 'Typewriter';
+    src: url('elegant-typewriter/ELEGANT TYPEWRITER Bold.ttf') format('truetype');
+}
+
+p {
+    font-size: 12px;
+    font-weight: bolder;
+    color: #000; /* Set text color */
+    margin: 10px 0; /* Add spacing between paragraphs */
+    /* white-space: nowrap; /* Keep text on one line */
+    /* overflow: hidden; Hide overflow */ 
+}
+
+span {
+    opacity: 0; /* Start with text hidden */
+    display: inline-block;
+}
+
+span.visible {
+    opacity: 1;
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px); /* Optional: Add a slight fade-in effect */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
